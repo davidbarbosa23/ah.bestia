@@ -1,6 +1,13 @@
 {
+  "Metadata": {
+    "title": "Hola mundo!",
+    "description": "Desarrollador"
+  },
   "HomePage": {
     "title": "Hola mundo!",
     "about": "Inicio"
+  },
+  "NotFoundPage": {
+    "title": "Página no encontrada"
   }
 }

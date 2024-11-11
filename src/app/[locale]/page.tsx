@@ -4,7 +4,7 @@ import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import styles from './page.module.css';
 
-import Banner from '../../components/banner';
+import Banner from '../../components/Banner';
 
 export default function HomePage() {
   const t = useTranslations('HomePage');

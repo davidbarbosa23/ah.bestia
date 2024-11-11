@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Atropos from 'atropos/react';
 
-export default function Banner({ className }: { className: string }) {
+export function Banner({ className }: { className: string }) {
   return (
     <Atropos className='my-atropos'>
       <Image
