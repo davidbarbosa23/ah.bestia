@@ -23,7 +23,14 @@ const styles = css`
 
   body {
     color: var(--foreground);
-    background: var(--background);
+
+    background-attachment: fixed;
+    background-color: var(--background);
+    background-image: url(/img/bg_dark.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
