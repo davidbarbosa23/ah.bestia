@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
+import { Link } from '@/components/ui/Button';
 
 import Image from 'next/image';
 import styles from './page.module.css';

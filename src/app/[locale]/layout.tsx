@@ -1,7 +1,10 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+
 import { routing } from '@/i18n/routing';
+import { StyleProvider } from '@/providers/styles';
+import GlobalStyles from '@/styles/GlobalStyles';
 
 // import localFont from 'next/font/local';
 import '../globals.css';
@@ -51,7 +54,10 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <StyleProvider>
+            <GlobalStyles />
+            {children}
+          </StyleProvider>
         </NextIntlClientProvider>
       </body>
     </html>
