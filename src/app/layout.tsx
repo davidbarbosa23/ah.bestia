@@ -1,7 +1,19 @@
-export default function RootLayout({
+import { StyleProvider } from '@/providers/styles';
+import GlobalStyles from '@/styles/GlobalStyles';
+
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <html lang='en'>
+      <body>
+        <StyleProvider>
+          <GlobalStyles />
+          {children}
+        </StyleProvider>
+      </body>
+    </html>
+  );
 }

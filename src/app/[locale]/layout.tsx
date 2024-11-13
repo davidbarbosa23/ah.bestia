@@ -7,7 +7,6 @@ import { StyleProvider } from '@/providers/styles';
 import GlobalStyles from '@/styles/GlobalStyles';
 
 // import localFont from 'next/font/local';
-import '../globals.css';
 import 'atropos/css';
 
 // const geistSans = localFont({
