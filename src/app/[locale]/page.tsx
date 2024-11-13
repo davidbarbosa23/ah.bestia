@@ -1,22 +1,22 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+
+import Banner from '@/components/Banner';
 import { Link } from '@/components/ui/Button';
 
-import Image from 'next/image';
 import styles from './page.module.css';
-
-import Banner from '../../components/Banner';
 
 export default function HomePage() {
   const t = useTranslations('HomePage');
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <h1>{t('title')}</h1>
         <div id='app'>
           <Banner className={styles.logo} />
         </div>
 
         <ol>
-          <li>{t('title')}</li>
           <li>
             <Link href='/about'>{t('about')}</Link>
           </li>
